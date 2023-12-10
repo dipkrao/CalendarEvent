@@ -7,18 +7,17 @@ import RecurringPicker from '../../components/RecurringPicker'
 const RecurringEventsCalendar = ({ recurrenceType }) => {
   const [markedDates, setMarkedDates] = useState({})
   const [recurringType, setRecurringType] = useState('weekly')
-  console.log(
-    '🚀 ~ file: Home.screen.js:10 ~ RecurringEventsCalendar ~ recurringType:',
-    recurringType
-  )
+
   const generateRecurringDates = (
     startDate,
+    endDate,
     frequency,
     numOccurrences,
     recurrenceType
   ) => {
     const recurringDates = {}
     let currentDate = new Date(startDate)
+    const endDateTime = new Date(endDate).getTime()
 
     for (let i = 0; i < numOccurrences; i++) {
       const dateStr = format(currentDate, 'yyyy-MM-dd')
@@ -69,10 +68,12 @@ const RecurringEventsCalendar = ({ recurrenceType }) => {
   }
 
   const startDate = selectedDates?.start
-  const numOccurrences = 30
+  const endDate = selectedDates?.end
+  const numOccurrences = 7
 
   const updatedMarkedDates = generateRecurringDates(
     startDate,
+    endDate,
     1,
     numOccurrences,
     recurringType
