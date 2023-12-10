@@ -11,7 +11,7 @@ import Icon from 'react-native-vector-icons/FontAwesome'
 
 const RecurringPicker = ({ value, onChange }) => {
   const [modalVisible, setModalVisible] = useState(false)
-  const options = ['Weekly', 'Monthly']
+  const options = ['daily', 'weekly', 'monthly']
 
   const handleOptionPress = option => {
     setModalVisible(false)

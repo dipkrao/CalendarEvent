@@ -1,4 +1,4 @@
-#Sun Dec 10 07:16:03 IST 2023
+#Sun Dec 10 15:27:37 IST 2023
 base.0=D\:\\react-native\\CalenderEvent\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=D\:\\react-native\\CalenderEvent\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\10\\classes.dex
 base.10=D\:\\react-native\\CalenderEvent\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
@@ -6,6 +6,7 @@ base.11=D\:\\react-native\\CalenderEvent\\android\\app\\build\\intermediates\\de
 base.12=D\:\\react-native\\CalenderEvent\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
 base.13=D\:\\react-native\\CalenderEvent\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
 base.14=D\:\\react-native\\CalenderEvent\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
+base.15=D\:\\react-native\\CalenderEvent\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\14\\classes.dex
 base.2=D\:\\react-native\\CalenderEvent\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\11\\classes.dex
 base.3=D\:\\react-native\\CalenderEvent\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\1\\classes.dex
 base.4=D\:\\react-native\\CalenderEvent\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\2\\classes.dex
@@ -21,6 +22,7 @@ path.11=14/classes.dex
 path.12=2/classes.dex
 path.13=7/classes.dex
 path.14=9/classes.dex
+path.15=14/classes.dex
 path.2=11/classes.dex
 path.3=1/classes.dex
 path.4=2/classes.dex
@@ -36,6 +38,7 @@ renamed.11=classes12.dex
 renamed.12=classes13.dex
 renamed.13=classes14.dex
 renamed.14=classes15.dex
+renamed.15=classes16.dex
 renamed.2=classes3.dex
 renamed.3=classes4.dex
 renamed.4=classes5.dex

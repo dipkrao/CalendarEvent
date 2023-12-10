@@ -32,8 +32,9 @@ com.calenderevent.app-debug-30 D:\react-native\CalenderEvent\android\app\src\deb
 com.calenderevent.app-main-31 D:\react-native\CalenderEvent\android\app\src\main\res
 com.calenderevent.app-packaged_res-32 D:\react-native\CalenderEvent\node_modules\@react-native-community\datetimepicker\android\build\intermediates\packaged_res\debug
 com.calenderevent.app-packaged_res-33 D:\react-native\CalenderEvent\node_modules\@react-native-masked-view\masked-view\android\build\intermediates\packaged_res\debug
-com.calenderevent.app-packaged_res-34 D:\react-native\CalenderEvent\node_modules\react-native-gesture-handler\android\build\intermediates\packaged_res\debug
-com.calenderevent.app-packaged_res-35 D:\react-native\CalenderEvent\node_modules\react-native-pager-view\android\build\intermediates\packaged_res\debug
-com.calenderevent.app-packaged_res-36 D:\react-native\CalenderEvent\node_modules\react-native-safe-area-context\android\build\intermediates\packaged_res\debug
-com.calenderevent.app-packaged_res-37 D:\react-native\CalenderEvent\node_modules\react-native-screens\android\build\intermediates\packaged_res\debug
-com.calenderevent.app-packaged_res-38 D:\react-native\CalenderEvent\node_modules\react-native-vector-icons\android\build\intermediates\packaged_res\debug
+com.calenderevent.app-packaged_res-34 D:\react-native\CalenderEvent\node_modules\@react-native-picker\picker\android\build\intermediates\packaged_res\debug
+com.calenderevent.app-packaged_res-35 D:\react-native\CalenderEvent\node_modules\react-native-gesture-handler\android\build\intermediates\packaged_res\debug
+com.calenderevent.app-packaged_res-36 D:\react-native\CalenderEvent\node_modules\react-native-pager-view\android\build\intermediates\packaged_res\debug
+com.calenderevent.app-packaged_res-37 D:\react-native\CalenderEvent\node_modules\react-native-safe-area-context\android\build\intermediates\packaged_res\debug
+com.calenderevent.app-packaged_res-38 D:\react-native\CalenderEvent\node_modules\react-native-screens\android\build\intermediates\packaged_res\debug
+com.calenderevent.app-packaged_res-39 D:\react-native\CalenderEvent\node_modules\react-native-vector-icons\android\build\intermediates\packaged_res\debug

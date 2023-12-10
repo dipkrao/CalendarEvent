@@ -13,6 +13,7 @@
     "@react-native-community/cli": "^13.0.0",
     "@react-native-community/datetimepicker": "^7.6.2",
     "@react-native-masked-view/masked-view": "^0.2.8",
+    "@react-native-picker/picker": "^2.6.1",
     "@react-navigation/bottom-tabs": "^6.4.0",
     "@react-navigation/material-top-tabs": "^6.3.0",
     "@react-navigation/native": "^6.0.13",

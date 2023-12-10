@@ -17,6 +17,8 @@ import com.oblador.vectoricons.VectorIconsPackage;
 import com.reactcommunity.rndatetimepicker.RNDateTimePickerPackage;
 // @react-native-masked-view/masked-view
 import org.reactnative.maskedview.RNCMaskedViewPackage;
+// @react-native-picker/picker
+import com.reactnativecommunity.picker.RNCPickerPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.RNGestureHandlerPackage;
 // react-native-pager-view
@@ -73,6 +75,7 @@ public class PackageList {
       new VectorIconsPackage(),
       new RNDateTimePickerPackage(),
       new RNCMaskedViewPackage(),
+      new RNCPickerPackage(),
       new RNGestureHandlerPackage(),
       new PagerViewPackage(),
       new SafeAreaContextPackage(),

@@ -11,6 +11,7 @@ MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] C:\Users\dipkr\
 MERGED from [:react-native-vector-icons] D:\react-native\CalenderEvent\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_datetimepicker] D:\react-native\CalenderEvent\node_modules\@react-native-community\datetimepicker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-masked-view_masked-view] D:\react-native\CalenderEvent\node_modules\@react-native-masked-view\masked-view\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-picker_picker] D:\react-native\CalenderEvent\node_modules\@react-native-picker\picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-gesture-handler] D:\react-native\CalenderEvent\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-pager-view] D:\react-native\CalenderEvent\node_modules\react-native-pager-view\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-safe-area-context] D:\react-native\CalenderEvent\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
@@ -187,6 +188,8 @@ MERGED from [:react-native-community_datetimepicker] D:\react-native\CalenderEve
 MERGED from [:react-native-community_datetimepicker] D:\react-native\CalenderEvent\node_modules\@react-native-community\datetimepicker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-masked-view_masked-view] D:\react-native\CalenderEvent\node_modules\@react-native-masked-view\masked-view\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-masked-view_masked-view] D:\react-native\CalenderEvent\node_modules\@react-native-masked-view\masked-view\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-picker_picker] D:\react-native\CalenderEvent\node_modules\@react-native-picker\picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-picker_picker] D:\react-native\CalenderEvent\node_modules\@react-native-picker\picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-gesture-handler] D:\react-native\CalenderEvent\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-gesture-handler] D:\react-native\CalenderEvent\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-pager-view] D:\react-native\CalenderEvent\node_modules\react-native-pager-view\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
