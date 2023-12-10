@@ -3,19 +3,10 @@ import React, { useState } from 'react'
 import { View, Text, TextInput, Button } from 'react-native'
 import { Calendar } from 'react-native-calendars'
 import RecurringPicker from '../../components/RecurringPicker'
+import { format } from 'date-fns'
 
 const App = () => {
-  const [events, setEvents] = useState([
-    {
-      title: 'Recurring Event',
-      start: '2023-12-11T10:00:00',
-      end: '2023-12-11T12:00:00',
-      recurringType: 'weekly', // 'weekly' or 'monthly'
-      recurrenceCount: 5, // Number of occurrences
-      color: 'red' // Specify the color for this date
-    }
-  ])
-  console.log('🚀 ~ file: Home.screen.js:17 ~ App ~ events:', events)
+  const [events, setEvents] = useState([])
 
   const getRecurringEvents = () => {
     const recurringEvents = []
@@ -61,14 +52,14 @@ const App = () => {
     if (!start || (start && end)) {
       // If no start date selected or both start and end dates are selected, set a new start date
       setSelectedDates({
-        start: day.dateString,
+        start: new Date(day.dateString).toISOString().slice(0, -5),
         end: null
       })
     } else {
       // If start date is already selected, set the end date
       setSelectedDates({
         start,
-        end: day.dateString
+        end: new Date(day.dateString).toISOString().slice(0, -5)
       })
     }
   }
@@ -106,7 +97,6 @@ const App = () => {
 
   const [title, setTitle] = useState('')
   const [recurringType, setRecurringType] = useState('weekly')
-  const [eventss, setEventss] = useState({})
 
   const handleTitleChange = text => {
     setTitle(text)
@@ -117,18 +107,15 @@ const App = () => {
   }
 
   const handleCreateEvent = () => {
-    // TODO: Validate input and handle recurring events based on recurringType
-
-    // For simplicity, adding a single event for non-recurring events
-    const event = { marked: true, dotColor: 'blue' }
-    const startDateFormat = format(new Date(startDate), 'yyyy-MM-dd')
-    const endDateFormat = format(new Date(endDate), 'yyyy-MM-dd')
-
-    setEventss(prevEvents => ({
-      ...prevEvents,
-      [startDateFormat]: event,
-      [endDateFormat]: event
-    }))
+    setEvents({
+      title: title,
+      start: selectedDates.start,
+      end: selectedDates.end,
+      recurringType: recurringType, // 'weekly' or 'monthly'
+      recurrenceCount: 5, // Number of occurrences
+      color: 'red' // Specify the color for this date
+    })
+    // setEvents(eventss)
   }
 
   return (
@@ -184,7 +171,7 @@ const App = () => {
             color: 'black',
             backgroundColor: 'white'
           }}
-          placeholder={selectedDates?.start}
+          placeholder={format(new Date(selectedDates?.start), 'MMMM d, yyyy')}
         />
       </View>
       <View
@@ -210,7 +197,7 @@ const App = () => {
             color: 'black',
             backgroundColor: 'white'
           }}
-          placeholder={selectedDates?.end}
+          placeholder={format(new Date(selectedDates?.end), 'MMMM d, yyyy')}
         />
       </View>
       <View
@@ -219,7 +206,13 @@ const App = () => {
           justifyContent: 'space-evenly',
           margin: 15
         }}>
-        <Text style={{ fontSize: 15, fontWeight: '600', color: 'black' }}>
+        <Text
+          style={{
+            fontSize: 15,
+            fontWeight: '600',
+            alignSelf: 'center',
+            color: 'black'
+          }}>
           Recurring Type:
         </Text>
         <RecurringPicker
@@ -227,8 +220,9 @@ const App = () => {
           onChange={handleRecurringTypeChange}
         />
       </View>
-
-      <Button title="Create Event" onPress={handleCreateEvent} />
+      <View style={{ marginHorizontal: 30 }}>
+        <Button title="Create Event" onPress={handleCreateEvent} />
+      </View>
     </View>
   )
 }

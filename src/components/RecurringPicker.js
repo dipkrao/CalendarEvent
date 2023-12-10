@@ -1,5 +1,13 @@
 import React, { useState } from 'react'
-import { View, Text, TouchableOpacity, Modal, FlatList } from 'react-native'
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  Modal,
+  FlatList,
+  StyleSheet
+} from 'react-native'
+import Icon from 'react-native-vector-icons/FontAwesome'
 
 const RecurringPicker = ({ value, onChange }) => {
   const [modalVisible, setModalVisible] = useState(false)
@@ -15,6 +23,7 @@ const RecurringPicker = ({ value, onChange }) => {
       <TouchableOpacity
         style={{
           backgroundColor: 'white',
+          width: 270,
           paddingHorizontal: 20,
           paddingVertical: 10
         }}
@@ -22,9 +31,9 @@ const RecurringPicker = ({ value, onChange }) => {
         <Text
           style={{
             fontSize: 15,
-            fontWeight: '600',
+            fontWeight: '300',
             alignSelf: 'center',
-            color: 'white'
+            color: 'black'
           }}>
           {value}
         </Text>
@@ -37,13 +46,12 @@ const RecurringPicker = ({ value, onChange }) => {
         onRequestClose={() => setModalVisible(false)}>
         <View
           style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-          <View
-            style={{
-              width: 200,
-              backgroundColor: '#D3D0E4',
-              padding: 16,
-              borderRadius: 8
-            }}>
+          <View style={styles.modalView}>
+            <TouchableOpacity
+              onPress={() => setModalVisible(false)}
+              style={{ alignSelf: 'flex-end' }}>
+              <Icon name="times" size={15} color="black" />
+            </TouchableOpacity>
             <FlatList
               data={options}
               renderItem={({ item }) => (
@@ -67,5 +75,27 @@ const RecurringPicker = ({ value, onChange }) => {
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+  centeredView: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  modalView: {
+    backgroundColor: 'white',
+    padding: 16,
+    width: 200,
+    borderRadius: 8,
+    elevation: 5, // This adds a shadow on Android
+    shadowColor: '#000', // These properties are for iOS
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 3
+  },
+  closeButton: {
+    alignSelf: 'flex-end'
+  }
+})
 
 export default RecurringPicker
